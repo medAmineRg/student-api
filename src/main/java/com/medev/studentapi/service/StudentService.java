@@ -7,11 +7,11 @@ import java.util.List;
 
 public interface StudentService {
 
-    public List<Student> getStudent();
+    List<Student> getStudent();
 
-    public Student saveStudent(Student student);
+    Student saveStudent(Student student);
 
-    public Student updateStudent(Long id, Student student) throws NotFoundException;
+    Student updateStudent(Long id, Student student) throws NotFoundException;
 
-    public void deleteStudent(Long id) throws NotFoundException;
+    void deleteStudent(Long id) throws NotFoundException;
 }

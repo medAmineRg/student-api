@@ -1,6 +1,7 @@
 package com.medev.studentapi.controller;
 
 import com.medev.studentapi.entity.Student;
+import com.medev.studentapi.exception.NotFoundException;
 import com.medev.studentapi.service.StudentService;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,14 +30,14 @@ public class StudentController {
     }
 
     @PutMapping("/{id}")
-    public Student updateStudent(@PathVariable Long id, @RequestBody Student student) {
+    public Student updateStudent(@PathVariable Long id, @RequestBody Student student) throws NotFoundException {
 
         return studentService.updateStudent(id, student);
     }
 
     @DeleteMapping("/{id}")
-    public Student deleteStudent(@PathVariable Long id) {
-
-        return studentService.deleteStudent(id);
+    public String deleteStudent(@PathVariable Long id) throws NotFoundException {
+        studentService.deleteStudent(id);
+        return "Student was deleted";
     }
 }

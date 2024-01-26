@@ -1,7 +1,9 @@
 package com.medev.studentapi.service;
 
 import com.medev.studentapi.entity.Student;
+import com.medev.studentapi.exception.NotFoundException;
 import com.medev.studentapi.repository.StudentRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,9 +29,10 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student updateStudent(Long id, Student student) {
+    @Transactional
+    public Student updateStudent(Long id, Student student) throws NotFoundException {
 
-        Student foundStudent = studentRepository.findById(id).get();
+        Student foundStudent = studentRepository.findById(id).orElseThrow(()-> new NotFoundException("Student wasn't found!"));
 
         if(!Objects.equals(student.getFirstName(), foundStudent.getFirstName())) {
             foundStudent.setFirstName(student.getFirstName());
@@ -47,9 +50,9 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student deleteStudent(Long id) {
-        Student deletedStudent = studentRepository.findById(id).get();
-        studentRepository.deleteById(id);
-        return deletedStudent;
+    public void deleteStudent(Long id) throws NotFoundException {
+        Student student = studentRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("Student wasn't found"));
+        studentRepository.delete(student);
     }
 }

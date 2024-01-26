@@ -1,6 +1,7 @@
 package com.medev.studentapi.service;
 
 import com.medev.studentapi.entity.Student;
+import com.medev.studentapi.exception.NotFoundException;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ public interface StudentService {
 
     public Student saveStudent(Student student);
 
-    public Student updateStudent(Long id, Student student);
+    public Student updateStudent(Long id, Student student) throws NotFoundException;
 
-    public Student deleteStudent(Long id);
+    public void deleteStudent(Long id) throws NotFoundException;
 }

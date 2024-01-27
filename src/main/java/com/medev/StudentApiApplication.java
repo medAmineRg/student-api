@@ -1,4 +1,4 @@
-package com.medev.studentapi;
+package com.medev;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

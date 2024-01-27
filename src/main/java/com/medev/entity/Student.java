@@ -1,4 +1,4 @@
-package com.medev.studentapi.entity;
+package com.medev.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

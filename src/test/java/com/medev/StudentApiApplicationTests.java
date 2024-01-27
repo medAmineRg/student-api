@@ -1,4 +1,4 @@
-package com.medev.studentapi;
+package com.medev;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,6 @@
-package com.medev.studentapi.repository;
+package com.medev.repository;
 
-import com.medev.studentapi.entity.Student;
+import com.medev.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

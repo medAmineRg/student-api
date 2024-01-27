@@ -1,7 +1,7 @@
-package com.medev.studentapi.service;
+package com.medev.service;
 
-import com.medev.studentapi.entity.Student;
-import com.medev.studentapi.exception.NotFoundException;
+import com.medev.entity.Student;
+import com.medev.exception.NotFoundException;
 
 import java.util.List;
 

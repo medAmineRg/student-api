@@ -1,6 +1,8 @@
 package com.medev.advice;
 
 import com.medev.exception.NotFoundException;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -23,6 +25,18 @@ public class ApplicationControllerAdvice {
         LOG.error(ex.getMessage());
         return error;
     }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(ConstraintViolationException.class)
+    public Map<String, String> notFoundException(ConstraintViolationException ex) {
+        Map<String, String> error = new HashMap<>();
+        for (ConstraintViolation<?> violation : ex.getConstraintViolations()) {
+            error.put(violation.getPropertyPath().toString(), violation.getMessage());
+        }
+        LOG.error(ex.getMessage());
+        return error;
+    }
+
 
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)

@@ -87,3 +87,251 @@ ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@19fe4644 - failed
 2024-01-27 18:25:49,413 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-01-27 18:25:49,415 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2024-01-27 18:25:49,417 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 18:56:30,769 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 18:56:30,805 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 10820 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 18:56:30,805 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 18:56:31,199 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 18:56:31,232 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-01-27 18:56:31,501 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 18:56:31,508 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 18:56:31,510 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 18:56:31,510 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 18:56:31,540 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 18:56:31,541 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 709 ms
+2024-01-27 18:56:31,624 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 18:56:31,661 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 18:56:31,681 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 18:56:31,820 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 18:56:31,834 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 18:56:31,919 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30c7be6f
+2024-01-27 18:56:31,920 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 18:56:32,437 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 18:56:32,465 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 18:56:32,609 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 18:56:32,800 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 18:56:32,810 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 18:56:32,815 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.28 seconds (process running for 2.747)
+2024-01-27 18:56:51,355 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 18:56:51,355 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-01-27 18:56:51,356 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2024-01-27 18:56:51,410 INFO c.m.c.StudentController [http-nio-8082-exec-1] Start method saveStudent
+2024-01-27 18:56:51,442 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-1] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:05:10,695 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:05:10,696 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-27 19:05:10,703 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 19:05:14,063 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 19:05:14,098 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 6780 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 19:05:14,099 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 19:05:14,497 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 19:05:14,527 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2024-01-27 19:05:14,784 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 19:05:14,790 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:05:14,792 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 19:05:14,792 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 19:05:14,821 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 19:05:14,821 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 685 ms
+2024-01-27 19:05:14,890 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 19:05:14,921 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 19:05:14,940 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 19:05:15,081 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 19:05:15,096 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 19:05:15,180 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2905b568
+2024-01-27 19:05:15,181 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 19:05:15,734 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 19:05:15,758 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:05:15,906 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 19:05:16,115 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:05:16,130 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 19:05:16,136 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.272 seconds (process running for 2.711)
+2024-01-27 19:05:21,617 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 19:05:21,617 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-3] Initializing Servlet 'dispatcherServlet'
+2024-01-27 19:05:21,618 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-3] Completed initialization in 1 ms
+2024-01-27 19:05:21,671 INFO c.m.c.StudentController [http-nio-8082-exec-3] Start method saveStudent
+2024-01-27 19:05:21,698 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-3] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:05:29,887 INFO c.m.c.StudentController [http-nio-8082-exec-4] Start method saveStudent
+2024-01-27 19:05:29,889 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-4] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:05:57,690 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:05:57,692 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-27 19:05:57,700 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 19:05:59,331 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 19:05:59,366 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 15884 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 19:05:59,367 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 19:05:59,775 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 19:05:59,805 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2024-01-27 19:06:00,052 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 19:06:00,057 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:06:00,058 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 19:06:00,058 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 19:06:00,087 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 19:06:00,087 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 684 ms
+2024-01-27 19:06:00,157 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 19:06:00,186 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 19:06:00,203 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 19:06:00,345 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 19:06:00,361 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 19:06:00,446 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dfe59d7
+2024-01-27 19:06:00,447 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 19:06:00,999 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 19:06:01,018 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Warning Code: 0, SQLState: 00000
+2024-01-27 19:06:01,018 WARN o.h.e.j.s.SqlExceptionHelper [main] drop cascades to 2 other objects
+2024-01-27 19:06:01,035 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:06:01,174 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 19:06:01,366 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:06:01,377 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 19:06:01,381 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.252 seconds (process running for 2.684)
+2024-01-27 19:06:08,029 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 19:06:08,030 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-01-27 19:06:08,030 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Completed initialization in 0 ms
+2024-01-27 19:06:08,090 INFO c.m.c.StudentController [http-nio-8082-exec-1] Start method saveStudent
+2024-01-27 19:06:08,120 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-1] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:08:11,409 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:08:11,415 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-27 19:08:11,424 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 19:08:13,994 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 19:08:14,028 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 21416 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 19:08:14,030 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 19:08:14,475 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 19:08:14,523 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-01-27 19:08:14,932 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 19:08:14,938 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:08:14,942 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 19:08:14,942 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 19:08:14,984 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 19:08:14,984 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 923 ms
+2024-01-27 19:08:15,081 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 19:08:15,121 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 19:08:15,150 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 19:08:15,313 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 19:08:15,332 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 19:08:15,575 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30c7be6f
+2024-01-27 19:08:15,576 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 19:08:16,235 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 19:08:16,250 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Warning Code: 0, SQLState: 00000
+2024-01-27 19:08:16,250 WARN o.h.e.j.s.SqlExceptionHelper [main] table "student" does not exist, skipping
+2024-01-27 19:08:16,263 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:08:16,439 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 19:08:16,655 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:08:16,666 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 19:08:16,672 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.92 seconds (process running for 3.363)
+2024-01-27 19:08:18,028 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 19:08:18,028 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-9] Initializing Servlet 'dispatcherServlet'
+2024-01-27 19:08:18,028 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-9] Completed initialization in 0 ms
+2024-01-27 19:08:18,093 INFO c.m.c.StudentController [http-nio-8082-exec-9] Start method saveStudent
+2024-01-27 19:08:18,127 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-9] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:08:29,238 INFO c.m.c.StudentController [http-nio-8082-exec-3] Start method saveStudent
+2024-01-27 19:08:29,253 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-3] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='length must be between 2 and 30', propertyPath=lastName, rootBeanClass=class com.medev.entity.Student, messageTemplate='{org.hibernate.validator.constraints.Length.message}'}
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:08:57,175 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:08:57,181 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-27 19:08:57,189 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 19:08:59,713 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 19:08:59,753 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 21500 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 19:08:59,753 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 19:09:00,200 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 19:09:00,237 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2024-01-27 19:09:00,580 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 19:09:00,587 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:09:00,590 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 19:09:00,590 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 19:09:00,622 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 19:09:00,622 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 841 ms
+2024-01-27 19:09:00,711 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 19:09:00,743 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 19:09:00,766 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 19:09:00,936 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 19:09:00,953 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 19:09:01,064 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a0f87e5
+2024-01-27 19:09:01,065 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 19:09:01,685 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 19:09:01,697 WARN o.h.e.j.s.SqlExceptionHelper [main] SQL Warning Code: 0, SQLState: 00000
+2024-01-27 19:09:01,697 WARN o.h.e.j.s.SqlExceptionHelper [main] table "student" does not exist, skipping
+2024-01-27 19:09:01,709 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:09:01,883 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 19:09:02,116 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:09:02,132 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 19:09:02,138 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.652 seconds (process running for 3.087)
+2024-01-27 19:09:11,125 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 19:09:11,126 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-01-27 19:09:11,127 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2024-01-27 19:09:11,202 INFO c.m.c.StudentController [http-nio-8082-exec-1] Start method saveStudent
+2024-01-27 19:09:11,231 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-1] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:09:15,687 INFO c.m.c.StudentController [http-nio-8082-exec-9] Start method saveStudent
+2024-01-27 19:09:15,691 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-9] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='Invalid phone number format', propertyPath=phone, rootBeanClass=class com.medev.entity.Student, messageTemplate='Invalid phone number format'}
+]
+2024-01-27 19:11:35,271 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:11:35,278 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-27 19:11:35,285 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 19:11:37,851 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 19:11:37,888 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 1396 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 19:11:37,889 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 19:11:38,379 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 19:11:38,432 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2024-01-27 19:11:38,752 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 19:11:38,760 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:11:38,764 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 19:11:38,764 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 19:11:38,802 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 19:11:38,802 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 880 ms
+2024-01-27 19:11:38,890 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 19:11:38,924 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 19:11:38,946 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 19:11:39,101 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 19:11:39,118 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 19:11:39,244 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5df64b2a
+2024-01-27 19:11:39,245 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 19:11:39,904 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 19:11:39,943 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:11:40,131 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 19:11:40,402 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 19:11:40,413 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 19:11:40,419 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.802 seconds (process running for 3.237)
+2024-01-27 19:11:44,966 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 19:11:44,967 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-01-27 19:11:44,968 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-2] Completed initialization in 1 ms
+2024-01-27 19:11:45,032 INFO c.m.c.StudentController [http-nio-8082-exec-2] Start method saveStudent
+2024-01-27 19:11:45,088 INFO c.m.c.StudentController [http-nio-8082-exec-2] End method saveStudent. Saved student: com.medev.entity.Student@210e2335
+2024-01-27 19:11:49,121 INFO c.m.c.StudentController [http-nio-8082-exec-3] Start method get Student
+2024-01-27 19:11:49,239 INFO c.m.c.StudentController [http-nio-8082-exec-3] End method get Student
+2024-01-27 19:11:55,701 INFO c.m.c.StudentController [http-nio-8082-exec-5] Start method saveStudent
+2024-01-27 19:11:55,730 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-5] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be empty', propertyPath=lastName, rootBeanClass=class com.medev.entity.Student, messageTemplate='{jakarta.validation.constraints.NotEmpty.message}'}
+	ConstraintViolationImpl{interpolatedMessage='must not be empty', propertyPath=firstName, rootBeanClass=class com.medev.entity.Student, messageTemplate='{jakarta.validation.constraints.NotEmpty.message}'}
+]
+2024-01-27 19:12:10,688 INFO c.m.c.StudentController [http-nio-8082-exec-4] Start method saveStudent
+2024-01-27 19:12:10,692 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-4] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='length must be between 2 and 30', propertyPath=firstName, rootBeanClass=class com.medev.entity.Student, messageTemplate='{org.hibernate.validator.constraints.Length.message}'}
+]
+2024-01-27 19:12:17,893 INFO c.m.c.StudentController [http-nio-8082-exec-9] Start method saveStudent
+2024-01-27 19:12:17,895 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-9] Validation failed for classes [com.medev.entity.Student] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='length must be between 2 and 30', propertyPath=lastName, rootBeanClass=class com.medev.entity.Student, messageTemplate='{org.hibernate.validator.constraints.Length.message}'}
+	ConstraintViolationImpl{interpolatedMessage='length must be between 2 and 30', propertyPath=firstName, rootBeanClass=class com.medev.entity.Student, messageTemplate='{org.hibernate.validator.constraints.Length.message}'}
+]
+2024-01-27 19:12:38,458 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 19:12:38,459 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-27 19:12:38,470 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

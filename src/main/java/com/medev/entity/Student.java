@@ -1,9 +1,10 @@
 package com.medev.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import org.hibernate.validator.constraints.Length;
 
 @Entity
 public class Student {
@@ -11,8 +12,19 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "firstName")
+    @Length(min = 2, max = 30)
+    @NotEmpty
     private String firstName;
+    @Column(name = "lastName")
+    @Length(min = 2, max = 30)
+    @NotEmpty
     private String lastName;
+    @Column(name = "phone")
+    @Pattern(
+            regexp = "^(06|07)\\d{8}$",
+            message = "Invalid phone number format. It should start with '06' or '07' followed by 8 digits."
+    )
     private String phone;
 
     public Student() {

@@ -22,7 +22,7 @@ public class StudentController {
 
 
     @GetMapping()
-    public List<Student> getStudent() throws Exception {
+    public List<Student> getStudent() {
         LOG.info("Start method get Student");
         List<Student> students = studentService.getStudent();
         LOG.info("End method get Student");

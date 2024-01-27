@@ -335,3 +335,36 @@ List of constraint violations:[
 2024-01-27 19:12:38,458 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-01-27 19:12:38,459 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2024-01-27 19:12:38,470 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-27 20:17:37,521 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-01-27 20:17:37,569 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 22108 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-01-27 20:17:37,570 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-01-27 20:17:38,144 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 20:17:38,181 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2024-01-27 20:17:38,493 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-01-27 20:17:38,502 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-01-27 20:17:38,503 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-01-27 20:17:38,503 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-27 20:17:38,539 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-01-27 20:17:38,540 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 936 ms
+2024-01-27 20:17:38,627 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 20:17:38,658 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-27 20:17:38,678 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-27 20:17:38,852 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-27 20:17:38,868 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-27 20:17:38,968 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f6f9cef
+2024-01-27 20:17:38,969 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-27 20:17:39,604 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-27 20:17:39,634 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 20:17:39,873 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 20:17:40,139 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-01-27 20:17:40,152 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-01-27 20:17:40,159 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.867 seconds (process running for 3.461)
+2024-01-27 20:18:10,419 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 20:18:10,419 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-01-27 20:18:10,420 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-2] Completed initialization in 1 ms
+2024-01-27 20:18:10,437 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-2] No static resource api/swagger-ui/index.html.
+2024-01-27 20:18:10,708 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-3] No static resource favicon.ico.
+2024-01-27 20:18:20,268 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-1] No static resource .
+2024-01-27 20:18:20,384 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-4] No static resource favicon.ico.
+2024-01-27 20:19:24,961 INFO o.s.a.AbstractOpenApiResource [http-nio-8082-exec-5] Init duration for springdoc-openapi is: 204 ms
+2024-01-27 20:19:25,113 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-9] No static resource favicon.ico.

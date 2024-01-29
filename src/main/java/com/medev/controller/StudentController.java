@@ -1,5 +1,6 @@
 package com.medev.controller;
 
+import com.medev.dao.StudentSearchDao;
 import com.medev.dto.StudentDto;
 import com.medev.entity.Student;
 import com.medev.exception.NotFoundException;
@@ -16,12 +17,13 @@ import java.util.List;
 public class StudentController {
 
     private final StudentService studentService;
+    private final StudentSearchDao studentSearchDao;
     private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 
-    StudentController(StudentService studentService) {
+    public StudentController(StudentService studentService, StudentSearchDao studentSearchDao) {
         this.studentService = studentService;
+        this.studentSearchDao = studentSearchDao;
     }
-
 
     @GetMapping()
     public Page<StudentDto> getStudent(@RequestParam(name ="start", required = false) Integer start, @RequestParam(name="size", required = false) Integer size) {
@@ -30,6 +32,14 @@ public class StudentController {
         int sz = (size != null) ? size : 10;
         Page<StudentDto> students = studentService.getStudent(st, sz);
         LOG.info("End method get Student");
+        return students;
+    }
+
+    @GetMapping("/filter")
+    public List<Student> getFilteredStudent(@RequestParam(name ="firstName", required = false) String firstName, @RequestParam(name="lastName", required = false) String lastName, @RequestParam(name="phone", required = false) String phone) {
+        LOG.info("Start method get Filtred Student");
+        List<Student> students = studentSearchDao.filterStudent(firstName, lastName, phone);
+        LOG.info("End method get Filtred Student");
         return students;
     }
 

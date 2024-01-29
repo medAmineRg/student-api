@@ -1,9 +1,14 @@
 package com.medev.service;
 
+import com.medev.dto.StudentDto;
 import com.medev.entity.Student;
 import com.medev.exception.NotFoundException;
+import com.medev.mapper.StudentMapper;
 import com.medev.repository.StudentRepository;
 import jakarta.transaction.Transactional;
+import org.mapstruct.factory.Mappers;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,46 +18,48 @@ import java.util.Objects;
 public class StudentServiceImpl implements StudentService {
 
     private final StudentRepository studentRepository;
+    private final StudentMapper studentMapper = Mappers.getMapper(StudentMapper.class);
 
-    public StudentServiceImpl(StudentRepository studentRepository) {
-        this.studentRepository = studentRepository;
+
+    public StudentServiceImpl(StudentRepository studentDtoRepository) {
+        this.studentRepository = studentDtoRepository;
+    }
+    
+    @Override
+    public Page<StudentDto> getStudent(int page, int size) {
+        return studentMapper.studentEntityToDtoPage(studentRepository.findAll(PageRequest.of(page, size)));
     }
 
     @Override
-    public List<Student> getStudent() {
-        return studentRepository.findAll();
-    }
-
-    @Override
-    public Student saveStudent(Student student) {
-        return studentRepository.save(student);
+    public StudentDto saveStudent(StudentDto studentDto) {
+        return studentMapper.studentEntityToDto(studentRepository.save(studentMapper.studentDtoToEntity(studentDto)));
     }
 
     @Override
     @Transactional
-    public Student updateStudent(Long id, Student student) throws NotFoundException {
+    public StudentDto updateStudent(Long id, StudentDto studentDto) throws NotFoundException {
 
         Student foundStudent = studentRepository.findById(id).orElseThrow(()-> new NotFoundException("Student wasn't found!"));
 
-        if(!Objects.equals(student.getFirstName(), foundStudent.getFirstName())) {
-            foundStudent.setFirstName(student.getFirstName());
+        if(!Objects.equals(studentDto.getFirstName(), foundStudent.getFirstName())) {
+            foundStudent.setFirstName(studentDto.getFirstName());
         }
 
-        if(!Objects.equals(student.getLastName(), foundStudent.getLastName())) {
-            foundStudent.setLastName(student.getLastName());
+        if(!Objects.equals(studentDto.getLastName(), foundStudent.getLastName())) {
+            foundStudent.setLastName(studentDto.getLastName());
         }
 
-        if(!Objects.equals(student.getPhone(), foundStudent.getPhone())) {
-            foundStudent.setPhone(student.getPhone());
+        if(!Objects.equals(studentDto.getPhone(), foundStudent.getPhone())) {
+            foundStudent.setPhone(studentDto.getPhone());
         }
 
-        return studentRepository.save(foundStudent);
+        return studentMapper.studentEntityToDto(studentRepository.save(foundStudent));
     }
 
     @Override
     public void deleteStudent(Long id) throws NotFoundException {
-        Student student = studentRepository.findById(id)
+        Student studentDto = studentRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Student wasn't found"));
-        studentRepository.delete(student);
+        studentRepository.delete(studentDto);
     }
 }

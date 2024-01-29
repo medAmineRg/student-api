@@ -1,17 +1,17 @@
 package com.medev.service;
 
-import com.medev.entity.Student;
+import com.medev.dto.StudentDto;
 import com.medev.exception.NotFoundException;
+import org.springframework.data.domain.Page;
 
-import java.util.List;
 
 public interface StudentService {
 
-    List<Student> getStudent();
+    Page<StudentDto> getStudent(int page, int size);
 
-    Student saveStudent(Student student);
+    StudentDto saveStudent(StudentDto student);
 
-    Student updateStudent(Long id, Student student) throws NotFoundException;
+    StudentDto updateStudent(Long id, StudentDto studentDto) throws NotFoundException;
 
     void deleteStudent(Long id) throws NotFoundException;
 }

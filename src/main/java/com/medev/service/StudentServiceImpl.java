@@ -5,13 +5,14 @@ import com.medev.entity.Student;
 import com.medev.exception.NotFoundException;
 import com.medev.mapper.StudentMapper;
 import com.medev.repository.StudentRepository;
+import jakarta.persistence.criteria.Predicate;
 import jakarta.transaction.Transactional;
 import org.mapstruct.factory.Mappers;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Objects;
 
 @Service
@@ -26,8 +27,21 @@ public class StudentServiceImpl implements StudentService {
     }
     
     @Override
-    public Page<StudentDto> getStudent(int page, int size) {
-        return studentMapper.studentEntityToDtoPage(studentRepository.findAll(PageRequest.of(page, size)));
+    public Page<StudentDto> getStudent(int start, int size) {
+        return studentMapper.studentEntityToDtoPage(studentRepository.findAll(PageRequest.of(start, size)));
+    }
+
+    @Override
+    public Page<StudentDto> getFilteredStudent(String firstName, String lastName, String phone, int page, int size) {
+
+        Specification<Student> spec = (root, query, builder) -> {
+            Predicate firstNamePredicate = builder.like(root.get("firstName"), "%"+firstName+"%");
+            Predicate lastNamePredicate = builder.like(root.get("lastName"), "%"+lastName+"%");
+            Predicate phonePredicate = builder.like(root.get("phone"), "%"+phone+"%");
+            return builder.or(firstNamePredicate, lastNamePredicate, phonePredicate);
+        };
+
+        return studentMapper.studentEntityToDtoPage(studentRepository.findAll(spec, PageRequest.of(page, size)));
     }
 
     @Override

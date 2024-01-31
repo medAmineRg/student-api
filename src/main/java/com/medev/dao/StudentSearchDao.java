@@ -28,12 +28,14 @@ public class StudentSearchDao {
         CriteriaQuery<Student> criteriaQuery = builder.createQuery(Student.class);
 
         Root<Student> root = criteriaQuery.from(Student.class);
+
         Predicate firstNamePredicate = builder.like(root.get("firstName"), "%"+firstName+"%");
         Predicate lastNamePredicate = builder.like(root.get("lastName"), "%"+lastName+"%");
         Predicate phonePredicate = builder.like(root.get("phone"), "%"+phone+"%");
-        Predicate flpPredicate = builder.or(firstNamePredicate, lastNamePredicate, phonePredicate);
 
-        criteriaQuery.where(flpPredicate);
+        Predicate flpOrPredicate = builder.or(firstNamePredicate, lastNamePredicate, phonePredicate);
+
+        criteriaQuery.where(flpOrPredicate);
 
         TypedQuery<Student> query = em.createQuery(criteriaQuery);
         return query.getResultList();

@@ -7,7 +7,8 @@ import org.springframework.data.domain.Page;
 
 public interface StudentService {
 
-    Page<StudentDto> getStudent(int page, int size);
+    Page<StudentDto> getStudent(int start, int size);
+    Page<StudentDto> getFilteredStudent(String firstName, String lastName, String phone, int start, int size);
 
     StudentDto saveStudent(StudentDto student);
 

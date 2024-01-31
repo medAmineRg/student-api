@@ -2,7 +2,6 @@ package com.medev.controller;
 
 import com.medev.dao.StudentSearchDao;
 import com.medev.dto.StudentDto;
-import com.medev.entity.Student;
 import com.medev.exception.NotFoundException;
 import com.medev.service.StudentService;
 import org.slf4j.Logger;
@@ -36,9 +35,9 @@ public class StudentController {
     }
 
     @GetMapping("/filter")
-    public List<Student> getFilteredStudent(@RequestParam(name ="firstName", required = false) String firstName, @RequestParam(name="lastName", required = false) String lastName, @RequestParam(name="phone", required = false) String phone) {
+    public Page<StudentDto> getFilteredStudent(@RequestParam(name ="firstName", required = false) String firstName, @RequestParam(name="lastName", required = false) String lastName, @RequestParam(name="phone", required = false) String phone, @RequestParam(name ="start", required = false) Integer start, @RequestParam(name="size", required = false) Integer size) {
         LOG.info("Start method get Filtred Student");
-        List<Student> students = studentSearchDao.filterStudent(firstName, lastName, phone);
+        Page<StudentDto> students = studentService.getFilteredStudent(firstName, lastName, phone, start, size);
         LOG.info("End method get Filtred Student");
         return students;
     }

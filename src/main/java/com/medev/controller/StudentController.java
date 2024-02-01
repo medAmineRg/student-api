@@ -1,6 +1,5 @@
 package com.medev.controller;
 
-import com.medev.dao.StudentSearchDao;
 import com.medev.dto.StudentDto;
 import com.medev.exception.NotFoundException;
 import com.medev.service.StudentService;
@@ -9,19 +8,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/v1/student")
 public class StudentController {
 
     private final StudentService studentService;
-    private final StudentSearchDao studentSearchDao;
+    // private final StudentSearchDao studentSearchDao;
     private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 
-    public StudentController(StudentService studentService, StudentSearchDao studentSearchDao) {
+    public StudentController(StudentService studentService) {
         this.studentService = studentService;
-        this.studentSearchDao = studentSearchDao;
     }
 
     @GetMapping()

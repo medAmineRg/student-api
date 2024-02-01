@@ -31,6 +31,14 @@ public class StudentController {
         return students;
     }
 
+    @GetMapping("/{id}")
+    public StudentDto getStudentById(@PathVariable Long id) throws NotFoundException {
+        LOG.info("Start method get Student by id");
+        StudentDto foundStudent = studentService.getStudentById(id);
+        LOG.info("End method get Student by id");
+        return foundStudent;
+    }
+
     @GetMapping("/filter")
     public Page<StudentDto> getFilteredStudent(@RequestParam(name ="firstName", required = false) String firstName, @RequestParam(name="lastName", required = false) String lastName, @RequestParam(name="phone", required = false) String phone, @RequestParam(name ="start", required = false) Integer start, @RequestParam(name="size", required = false) Integer size) {
         LOG.info("Start method get Filtred Student");

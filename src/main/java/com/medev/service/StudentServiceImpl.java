@@ -32,6 +32,12 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public StudentDto getStudentById(Long id) throws NotFoundException {
+        Student foundStudent = studentRepository.findById(id).orElseThrow(() -> new NotFoundException("Student not found"));
+        return studentMapper.studentEntityToDto(foundStudent);
+    }
+
+    @Override
     public Page<StudentDto> getFilteredStudent(String firstName, String lastName, String phone, int page, int size) {
 
         Specification<Student> spec = (root, query, builder) -> {

@@ -2,7 +2,9 @@ package com.medev.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.medev.dto.StudentDto;
+import com.medev.exception.NotFoundException;
 import com.medev.service.StudentService;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
@@ -35,6 +37,44 @@ public class StudentControllerTest {
         // Performing the GET request and validating the response
         mockMvc.perform(get("/v1/student"))
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    public void testGetStudentById() throws Exception {
+
+        // Given
+        Long studentId = 1L;
+        StudentDto foundStudent = new StudentDto(1L, "Amine", "Rguig", "0632996002");
+
+        // Mocking the service method
+        when(studentService.getStudentById(studentId))
+                .thenReturn(foundStudent);
+
+        // Creating a mock MVC instance
+        mockMvc.perform(get("/v1/student/{id}", studentId)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(asJsonString(foundStudent)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(studentId))
+                .andExpect(jsonPath("$.firstName").value("Amine"))
+                .andExpect(jsonPath("$.lastName").value("Rguig"))
+                .andExpect(jsonPath("$.phone").value("0632996002"))
+                .andDo(print());
+
+        verify(studentService, times(1)).getStudentById(1L);
+    }
+
+    @Test
+    public void testGetStudentByIdShouldReturnNotFound() throws Exception {
+
+        // Arrange
+        Long nonExistingStudentId = 99L;
+        when(studentService.getStudentById(nonExistingStudentId)).thenThrow(new NotFoundException("Student not found"));
+
+        mockMvc.perform(get("/v1/student/{id}", nonExistingStudentId)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.error").value("Student not found"));
     }
 
     @Test

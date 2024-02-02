@@ -29,3 +29,142 @@
 2024-02-01 08:04:21,748 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-4] Student not found
 2024-02-01 08:04:25,917 INFO c.m.c.StudentController [http-nio-8082-exec-9] Start method get Student by id
 2024-02-01 08:04:25,934 INFO c.m.c.StudentController [http-nio-8082-exec-9] End method get Student by id
+2024-02-01 08:09:41,117 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:09:41,278 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:09:41,676 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:09:41,717 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 11772 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:09:41,719 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:09:43,747 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:09:43,748 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:09:43,750 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:09:43,785 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.427 seconds (process running for 3.394)
+2024-02-01 08:09:43,931 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:09:43,935 INFO c.m.c.StudentController [main] End method get Student by id
+2024-02-01 08:12:16,135 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:12:16,292 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:12:16,651 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:12:16,697 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 14584 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:12:16,700 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:12:18,561 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:12:18,562 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:12:18,563 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:12:18,598 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.224 seconds (process running for 3.072)
+2024-02-01 08:12:18,750 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:12:18,756 INFO c.m.c.StudentController [main] End method get Student by id
+2024-02-01 08:13:17,051 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:13:17,225 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:13:17,630 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:13:17,671 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 16136 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:13:17,672 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:13:19,485 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:13:19,486 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:13:19,487 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:13:19,525 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.2 seconds (process running for 3.063)
+2024-02-01 08:13:19,633 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:13:19,641 INFO c.m.c.StudentController [main] End method get Student by id
+2024-02-01 08:13:54,549 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:13:54,718 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:13:55,101 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:13:55,143 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 20740 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:13:55,145 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:13:56,955 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:13:56,955 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:13:56,957 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:13:56,986 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.187 seconds (process running for 3.048)
+2024-02-01 08:13:57,062 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:13:57,077 INFO c.m.c.StudentController [main] End method get Student by id
+2024-02-01 08:14:06,630 INFO c.m.c.StudentController [http-nio-8082-exec-6] Start method get Student by id
+2024-02-01 08:14:06,633 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-6] Student not found
+2024-02-01 08:16:49,738 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:16:49,912 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:16:50,286 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:16:50,328 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 12712 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:16:50,330 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:16:52,145 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:16:52,146 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:16:52,147 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:16:52,175 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.185 seconds (process running for 3.005)
+2024-02-01 08:16:52,290 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:16:52,296 INFO c.m.c.StudentController [main] End method get Student by id
+2024-02-01 08:22:17,104 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:22:17,261 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:22:17,695 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:22:17,738 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 8652 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:22:17,740 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:22:19,556 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:22:19,556 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:22:19,558 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:22:19,597 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.253 seconds (process running for 3.192)
+2024-02-01 08:22:19,693 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:22:19,697 ERROR c.m.a.ApplicationControllerAdvice [main] Student not found
+2024-02-01 08:23:24,845 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:23:25,000 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:23:25,387 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:23:25,430 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 12840 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:23:25,432 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:23:27,262 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:23:27,262 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:23:27,263 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:23:27,299 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.199 seconds (process running for 3.034)
+2024-02-01 08:23:27,379 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:23:27,383 ERROR c.m.a.ApplicationControllerAdvice [main] Student not found
+2024-02-01 08:24:00,225 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:24:00,384 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:24:00,766 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:24:00,803 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 18764 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:24:00,806 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:24:02,494 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:24:02,495 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:24:02,497 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2024-02-01 08:24:02,533 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.061 seconds (process running for 3.013)
+2024-02-01 08:24:02,655 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:24:02,661 ERROR c.m.a.ApplicationControllerAdvice [main] Student not found
+2024-02-01 08:24:02,778 INFO c.m.c.StudentController [main] Start method saveStudent
+2024-02-01 08:24:02,780 INFO c.m.c.StudentController [main] End method saveStudent. Saved student: StudentDto{id=1, firstName='John', lastName='Doe', phone='0612345678'}
+2024-02-01 08:24:02,797 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
+2024-02-01 08:24:02,797 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
+2024-02-01 08:24:02,830 INFO c.m.c.StudentController [main] Start method deleteStudent for student with ID 1
+2024-02-01 08:24:02,830 INFO c.m.c.StudentController [main] End method deleteStudent. Student with ID 1 was deleted
+2024-02-01 08:24:02,836 INFO c.m.c.StudentController [main] Start method get Student by id
+2024-02-01 08:24:02,837 INFO c.m.c.StudentController [main] End method get Student by id
+2024-02-01 08:24:02,843 INFO c.m.c.StudentController [main] Start method get Student
+2024-02-01 08:24:02,843 INFO c.m.c.StudentController [main] End method get Student
+2024-02-01 08:25:08,172 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:25:08,322 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:25:08,695 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:25:08,745 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 3788 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:25:08,746 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:25:10,600 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:25:10,600 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:25:10,602 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 0 ms
+2024-02-01 08:25:10,632 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.23 seconds (process running for 3.071)
+2024-02-01 08:25:10,810 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
+2024-02-01 08:25:10,814 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
+2024-02-01 08:31:24,684 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:31:24,846 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:31:25,216 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:31:25,256 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 11868 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:31:25,257 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:31:27,043 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:31:27,044 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:31:27,046 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2024-02-01 08:31:27,078 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.152 seconds (process running for 2.991)
+2024-02-01 08:31:27,267 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
+2024-02-01 08:31:27,273 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
+2024-02-01 08:32:59,231 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-01 08:32:59,419 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
+2024-02-01 08:32:59,792 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-01 08:32:59,832 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 15892 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-01 08:32:59,833 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
+2024-02-01 08:33:01,730 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-02-01 08:33:01,730 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2024-02-01 08:33:01,732 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2024-02-01 08:33:01,764 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.254 seconds (process running for 3.209)
+2024-02-01 08:33:01,938 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
+2024-02-01 08:33:01,942 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
+2024-02-01 10:50:21,092 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16m20s348ms237µs600ns).
+2024-02-01 18:56:36,091 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h39m47s485ms68µs200ns).
+2024-02-01 22:43:35,189 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h42m53s769ms839µs200ns).
+2024-02-01 23:08:34,126 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-01 23:08:34,145 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-01 23:08:34,160 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

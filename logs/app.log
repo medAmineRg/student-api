@@ -1,170 +1,99 @@
-2024-02-01 08:03:58,284 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:03:58,334 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 2196 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:03:58,335 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
-2024-02-01 08:03:58,939 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-01 08:03:58,980 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
-2024-02-01 08:03:59,371 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
-2024-02-01 08:03:59,384 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
-2024-02-01 08:03:59,387 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
-2024-02-01 08:03:59,387 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-02-01 08:03:59,438 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
-2024-02-01 08:03:59,438 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1068 ms
-2024-02-01 08:03:59,553 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-01 08:03:59,652 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-02-01 08:03:59,695 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
-2024-02-01 08:03:59,930 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-01 08:03:59,960 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2024-02-01 08:04:00,112 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48b2dbc4
-2024-02-01 08:04:00,113 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2024-02-01 08:04:00,929 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-01 08:04:00,974 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-01 08:04:01,240 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-01 08:04:01,520 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
-2024-02-01 08:04:01,533 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
-2024-02-01 08:04:01,540 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 3.532 seconds (process running for 4.829)
-2024-02-01 08:04:21,648 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-01 08:04:21,648 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-4] Initializing Servlet 'dispatcherServlet'
-2024-02-01 08:04:21,649 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-4] Completed initialization in 1 ms
-2024-02-01 08:04:21,686 INFO c.m.c.StudentController [http-nio-8082-exec-4] Start method get Student by id
-2024-02-01 08:04:21,748 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-4] Student not found
-2024-02-01 08:04:25,917 INFO c.m.c.StudentController [http-nio-8082-exec-9] Start method get Student by id
-2024-02-01 08:04:25,934 INFO c.m.c.StudentController [http-nio-8082-exec-9] End method get Student by id
-2024-02-01 08:09:41,117 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:09:41,278 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:09:41,676 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:09:41,717 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 11772 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:09:41,719 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:09:43,747 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:09:43,748 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:09:43,750 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:09:43,785 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.427 seconds (process running for 3.394)
-2024-02-01 08:09:43,931 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:09:43,935 INFO c.m.c.StudentController [main] End method get Student by id
-2024-02-01 08:12:16,135 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:12:16,292 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:12:16,651 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:12:16,697 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 14584 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:12:16,700 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:12:18,561 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:12:18,562 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:12:18,563 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:12:18,598 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.224 seconds (process running for 3.072)
-2024-02-01 08:12:18,750 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:12:18,756 INFO c.m.c.StudentController [main] End method get Student by id
-2024-02-01 08:13:17,051 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:13:17,225 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:13:17,630 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:13:17,671 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 16136 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:13:17,672 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:13:19,485 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:13:19,486 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:13:19,487 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:13:19,525 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.2 seconds (process running for 3.063)
-2024-02-01 08:13:19,633 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:13:19,641 INFO c.m.c.StudentController [main] End method get Student by id
-2024-02-01 08:13:54,549 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:13:54,718 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:13:55,101 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:13:55,143 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 20740 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:13:55,145 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:13:56,955 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:13:56,955 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:13:56,957 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:13:56,986 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.187 seconds (process running for 3.048)
-2024-02-01 08:13:57,062 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:13:57,077 INFO c.m.c.StudentController [main] End method get Student by id
-2024-02-01 08:14:06,630 INFO c.m.c.StudentController [http-nio-8082-exec-6] Start method get Student by id
-2024-02-01 08:14:06,633 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-6] Student not found
-2024-02-01 08:16:49,738 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:16:49,912 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:16:50,286 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:16:50,328 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 12712 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:16:50,330 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:16:52,145 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:16:52,146 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:16:52,147 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:16:52,175 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.185 seconds (process running for 3.005)
-2024-02-01 08:16:52,290 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:16:52,296 INFO c.m.c.StudentController [main] End method get Student by id
-2024-02-01 08:22:17,104 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:22:17,261 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:22:17,695 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:22:17,738 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 8652 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:22:17,740 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:22:19,556 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:22:19,556 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:22:19,558 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:22:19,597 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.253 seconds (process running for 3.192)
-2024-02-01 08:22:19,693 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:22:19,697 ERROR c.m.a.ApplicationControllerAdvice [main] Student not found
-2024-02-01 08:23:24,845 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:23:25,000 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:23:25,387 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:23:25,430 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 12840 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:23:25,432 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:23:27,262 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:23:27,262 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:23:27,263 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:23:27,299 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.199 seconds (process running for 3.034)
-2024-02-01 08:23:27,379 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:23:27,383 ERROR c.m.a.ApplicationControllerAdvice [main] Student not found
-2024-02-01 08:24:00,225 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:24:00,384 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:24:00,766 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:24:00,803 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 18764 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:24:00,806 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:24:02,494 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:24:02,495 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:24:02,497 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
-2024-02-01 08:24:02,533 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.061 seconds (process running for 3.013)
-2024-02-01 08:24:02,655 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:24:02,661 ERROR c.m.a.ApplicationControllerAdvice [main] Student not found
-2024-02-01 08:24:02,778 INFO c.m.c.StudentController [main] Start method saveStudent
-2024-02-01 08:24:02,780 INFO c.m.c.StudentController [main] End method saveStudent. Saved student: StudentDto{id=1, firstName='John', lastName='Doe', phone='0612345678'}
-2024-02-01 08:24:02,797 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
-2024-02-01 08:24:02,797 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
-2024-02-01 08:24:02,830 INFO c.m.c.StudentController [main] Start method deleteStudent for student with ID 1
-2024-02-01 08:24:02,830 INFO c.m.c.StudentController [main] End method deleteStudent. Student with ID 1 was deleted
-2024-02-01 08:24:02,836 INFO c.m.c.StudentController [main] Start method get Student by id
-2024-02-01 08:24:02,837 INFO c.m.c.StudentController [main] End method get Student by id
-2024-02-01 08:24:02,843 INFO c.m.c.StudentController [main] Start method get Student
-2024-02-01 08:24:02,843 INFO c.m.c.StudentController [main] End method get Student
-2024-02-01 08:25:08,172 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:25:08,322 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:25:08,695 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:25:08,745 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 3788 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:25:08,746 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:25:10,600 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:25:10,600 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:25:10,602 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 0 ms
-2024-02-01 08:25:10,632 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.23 seconds (process running for 3.071)
-2024-02-01 08:25:10,810 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
-2024-02-01 08:25:10,814 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
-2024-02-01 08:31:24,684 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:31:24,846 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:31:25,216 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:31:25,256 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 11868 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:31:25,257 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:31:27,043 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:31:27,044 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:31:27,046 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
-2024-02-01 08:31:27,078 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.152 seconds (process running for 2.991)
-2024-02-01 08:31:27,267 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
-2024-02-01 08:31:27,273 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
-2024-02-01 08:32:59,231 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.medev.controller.StudentControllerTest]: StudentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-02-01 08:32:59,419 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.medev.StudentApiApplication for test class com.medev.controller.StudentControllerTest
-2024-02-01 08:32:59,792 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-02-01 08:32:59,832 INFO c.m.c.StudentControllerTest [main] Starting StudentControllerTest using Java 17.0.9 with PID 15892 (started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
-2024-02-01 08:32:59,833 INFO c.m.c.StudentControllerTest [main] The following 1 profile is active: "dev"
-2024-02-01 08:33:01,730 INFO o.s.b.t.m.w.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
-2024-02-01 08:33:01,730 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
-2024-02-01 08:33:01,732 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
-2024-02-01 08:33:01,764 INFO c.m.c.StudentControllerTest [main] Started StudentControllerTest in 2.254 seconds (process running for 3.209)
-2024-02-01 08:33:01,938 INFO c.m.c.StudentController [main] Start method updateStudent for student with ID 1
-2024-02-01 08:33:01,942 INFO c.m.c.StudentController [main] End method updateStudent. Updated student: StudentDto{id=1, firstName='Amine', lastName='Rguig', phone='0632996002'}
-2024-02-01 10:50:21,092 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h16m20s348ms237µs600ns).
-2024-02-01 18:56:36,091 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h39m47s485ms68µs200ns).
-2024-02-01 22:43:35,189 WARN c.z.h.p.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h42m53s769ms839µs200ns).
-2024-02-01 23:08:34,126 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-02-01 23:08:34,145 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2024-02-01 23:08:34,160 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-02-15 16:36:36,830 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 6880 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-15 16:36:36,797 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-15 16:36:36,837 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-02-15 16:36:37,333 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15 16:36:37,377 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2024-02-15 16:36:37,695 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-02-15 16:36:37,702 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-15 16:36:37,703 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-02-15 16:36:37,704 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-02-15 16:36:37,739 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-02-15 16:36:37,739 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 868 ms
+2024-02-15 16:36:37,820 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15 16:36:37,854 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-15 16:36:37,873 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-02-15 16:36:38,040 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15 16:36:38,062 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-02-15 16:36:38,170 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22aefae0
+2024-02-15 16:36:38,171 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-02-15 16:36:38,805 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-15 16:36:38,836 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15 16:36:39,077 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15 16:36:39,329 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-02-15 16:36:39,340 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-02-15 16:36:39,346 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.783 seconds (process running for 3.716)
+2024-02-15 16:36:43,070 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-15 16:36:43,070 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-02-15 16:36:43,071 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2024-02-15 16:36:43,459 INFO o.s.a.AbstractOpenApiResource [http-nio-8082-exec-4] Init duration for springdoc-openapi is: 191 ms
+2024-02-15 16:36:50,549 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-3] No static resource api-docs.
+2024-02-15 16:36:50,641 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-7] No static resource favicon.ico.
+2024-02-15 16:36:56,919 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-8] No static resource favicon.ico.
+2024-02-15 16:39:09,574 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15 16:39:09,576 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-15 16:39:09,584 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-02-15 16:39:11,463 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-15 16:39:11,493 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 14084 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-15 16:39:11,494 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-02-15 16:39:11,997 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15 16:39:12,031 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2024-02-15 16:39:12,310 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-02-15 16:39:12,316 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-15 16:39:12,319 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-02-15 16:39:12,319 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-02-15 16:39:12,353 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-02-15 16:39:12,353 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 822 ms
+2024-02-15 16:39:12,435 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15 16:39:12,464 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-15 16:39:12,486 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-02-15 16:39:12,638 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15 16:39:12,654 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-02-15 16:39:12,754 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22aefae0
+2024-02-15 16:39:12,755 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-02-15 16:39:13,320 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-15 16:39:13,355 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15 16:39:13,612 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15 16:39:13,854 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-02-15 16:39:13,867 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-02-15 16:39:13,873 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.627 seconds (process running for 3.123)
+2024-02-15 16:39:27,044 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15 16:39:27,046 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-15 16:39:27,053 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-02-15 16:39:28,847 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-02-15 16:39:28,878 INFO c.m.StudentApiApplication [main] Starting StudentApiApplication using Java 17.0.9 with PID 14548 (C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api\target\classes started by Mohamed-Amine in C:\Users\Mohamed-Amine\Desktop\JAVA_REPO\student-api)
+2024-02-15 16:39:28,879 INFO c.m.StudentApiApplication [main] The following 1 profile is active: "dev"
+2024-02-15 16:39:29,348 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-15 16:39:29,384 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2024-02-15 16:39:29,661 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2024-02-15 16:39:29,667 INFO o.a.c.h.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8082"]
+2024-02-15 16:39:29,669 INFO o.a.c.c.StandardService [main] Starting service [Tomcat]
+2024-02-15 16:39:29,669 INFO o.a.c.c.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-02-15 16:39:29,703 INFO o.a.c.c.C.[.[.[/] [main] Initializing Spring embedded WebApplicationContext
+2024-02-15 16:39:29,703 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 797 ms
+2024-02-15 16:39:29,784 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-15 16:39:29,817 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-15 16:39:29,839 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-02-15 16:39:29,993 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-15 16:39:30,008 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-02-15 16:39:30,103 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ffa7041
+2024-02-15 16:39:30,104 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-02-15 16:39:30,724 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-15 16:39:30,760 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15 16:39:31,001 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-15 16:39:31,257 INFO o.a.c.h.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8082"]
+2024-02-15 16:39:31,270 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2024-02-15 16:39:31,276 INFO c.m.StudentApiApplication [main] Started StudentApiApplication in 2.647 seconds (process running for 3.157)
+2024-02-15 16:39:35,475 INFO o.a.c.c.C.[.[.[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-15 16:39:35,476 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-02-15 16:39:35,477 INFO o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2024-02-15 16:39:35,500 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-1] No static resource v3/api-docs.
+2024-02-15 16:39:35,609 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-4] No static resource favicon.ico.
+2024-02-15 16:39:41,481 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-3] No static resource v3/swagger-docs.
+2024-02-15 16:39:41,571 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-5] No static resource favicon.ico.
+2024-02-15 16:39:59,333 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-6] No static resource v3/swagger-docs.
+2024-02-15 16:39:59,425 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-2] No static resource favicon.ico.
+2024-02-15 16:40:02,405 INFO o.s.a.AbstractOpenApiResource [http-nio-8082-exec-7] Init duration for springdoc-openapi is: 258 ms
+2024-02-15 16:40:02,532 ERROR c.m.a.ApplicationControllerAdvice [http-nio-8082-exec-8] No static resource favicon.ico.
+2024-02-15 16:41:02,198 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-15 16:41:02,200 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-15 16:41:02,207 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
